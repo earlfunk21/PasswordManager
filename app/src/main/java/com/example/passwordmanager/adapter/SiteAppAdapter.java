@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.passwordmanager.R;
 import com.example.passwordmanager.activity.AccountActivity;
 import com.example.passwordmanager.database.AppDatabase;
+import com.example.passwordmanager.database.dao.AccountDao;
 import com.example.passwordmanager.database.dao.SiteAppDao;
 import com.example.passwordmanager.database.entity.SiteApp;
 
@@ -75,6 +76,8 @@ public class SiteAppAdapter extends RecyclerView.Adapter<SiteAppAdapter.ViewHold
                     public void onClick(DialogInterface dialog, int which) {
                         SiteAppDao siteAppDao = AppDatabase.getInstance(context).siteAppDao();
                         siteAppDao.delete(siteApp);
+                        AccountDao accountDao = AppDatabase.getInstance(context).accountDao();
+                        accountDao.deleteAllByAppId(siteApp.getId());
                         int currentPosition = holder.getAdapterPosition();
                         appList.remove(currentPosition);
                         notifyItemRemoved(currentPosition);

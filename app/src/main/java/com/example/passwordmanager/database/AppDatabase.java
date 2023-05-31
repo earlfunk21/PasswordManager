@@ -23,7 +23,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public static AppDatabase getInstance(Context context) {
         if (instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(),
-                            AppDatabase.class, "database1")
+                            AppDatabase.class, "password_manager_db")
                     .allowMainThreadQueries()
                     .build();
         }

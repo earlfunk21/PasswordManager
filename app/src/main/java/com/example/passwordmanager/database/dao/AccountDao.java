@@ -24,4 +24,7 @@ public interface AccountDao {
 
     @Delete
     void delete(Account account);
+
+    @Query("DELETE FROM Account WHERE appId = :appId")
+    void deleteAllByAppId(long appId);
 }
