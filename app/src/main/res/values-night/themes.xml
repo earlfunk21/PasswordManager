@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PasswordManager" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/sapphire</item>
+    </style>
+
+    <style name="PopupAddAppStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/positive</item>
+        <item name="dialogCornerRadius">20dp</item>
+    </style>
+
+    <style name="PopupDeleteAppStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/delete</item>
+        <item name="dialogCornerRadius">20dp</item>
+    </style>
+
+    <style name="positive">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/sapphire</item>
+    </style>
+
+    <style name="negative">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="delete">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+    </style>
+</resources>

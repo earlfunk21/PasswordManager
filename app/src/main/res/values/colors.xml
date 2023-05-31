@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">@android:color/darker_gray</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="sapphire">#2b50aa</color>
+    <color name="raisinBlack">#272727</color>
+    <color name="plum">#ff9fe5</color>
+    <color name="teaRose">#ffd4d4</color>
+    <color name="lightRed">#ff858d</color>
+
+    <color name="backgroundLight">@color/raisinBlack</color>
+    <color name="backgroundDark">@color/black</color>
+
+    <color name="textColor">@color/white</color>
+</resources>
