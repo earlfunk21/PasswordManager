@@ -1,4 +1,4 @@
-package com.example.passwordmanager.activity;
+package com.morax.passwordmanager.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.passwordmanager.R;
+import com.morax.passwordmanager.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

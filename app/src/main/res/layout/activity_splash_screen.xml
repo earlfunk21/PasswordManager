@@ -7,7 +7,7 @@
     android:background="@color/gray"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.SplashScreenActivity">
+    tools:context="com.morax.passwordmanager.activity.SplashScreenActivity">
 
 
     <ImageView

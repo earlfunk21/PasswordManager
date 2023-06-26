@@ -1,4 +1,4 @@
-package com.example.passwordmanager.util;
+package com.morax.passwordmanager.util;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

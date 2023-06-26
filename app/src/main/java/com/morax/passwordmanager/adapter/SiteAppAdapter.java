@@ -1,4 +1,4 @@
-package com.example.passwordmanager.adapter;
+package com.morax.passwordmanager.adapter;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,12 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.passwordmanager.R;
-import com.example.passwordmanager.activity.AccountActivity;
-import com.example.passwordmanager.database.AppDatabase;
-import com.example.passwordmanager.database.dao.AccountDao;
-import com.example.passwordmanager.database.dao.SiteAppDao;
-import com.example.passwordmanager.database.entity.SiteApp;
+import com.morax.passwordmanager.R;
+import com.morax.passwordmanager.activity.AccountActivity;
+import com.morax.passwordmanager.database.AppDatabase;
+import com.morax.passwordmanager.database.dao.AccountDao;
+import com.morax.passwordmanager.database.dao.SiteAppDao;
+import com.morax.passwordmanager.database.entity.SiteApp;
 
 import java.util.List;
 

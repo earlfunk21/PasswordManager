@@ -1,4 +1,4 @@
-package com.example.passwordmanager.activity;
+package com.morax.passwordmanager.activity;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,11 +9,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.example.passwordmanager.R;
-import com.example.passwordmanager.adapter.SiteAppAdapter;
-import com.example.passwordmanager.database.AppDatabase;
-import com.example.passwordmanager.database.dao.SiteAppDao;
-import com.example.passwordmanager.database.entity.SiteApp;
+import com.morax.passwordmanager.R;
+import com.morax.passwordmanager.adapter.SiteAppAdapter;
+import com.morax.passwordmanager.database.AppDatabase;
+import com.morax.passwordmanager.database.dao.SiteAppDao;
+import com.morax.passwordmanager.database.entity.SiteApp;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 

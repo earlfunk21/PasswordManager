@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundDark"
-    tools:context=".activity.AccountActivity">
+    tools:context="com.morax.passwordmanager.activity.AccountActivity">
 
     <LinearLayout
         android:id="@+id/toolbar"

@@ -1,19 +1,6 @@
-package com.example.passwordmanager.util;
+package com.morax.passwordmanager.util;
 
-import android.os.Build;
-
-import com.example.passwordmanager.BuildConfig;
-
-import java.nio.charset.StandardCharsets;
-import java.security.Key;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-import java.util.Base64;
-
-import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
+import com.morax.passwordmanager.BuildConfig;
 
 public class Security {
     public static final String SECRET_KEY = BuildConfig.AES_SECRET_KEY;

@@ -1,4 +1,4 @@
-package com.example.passwordmanager.database.entity;
+package com.morax.passwordmanager.database.entity;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

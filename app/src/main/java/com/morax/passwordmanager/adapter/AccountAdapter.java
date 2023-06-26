@@ -1,4 +1,4 @@
-package com.example.passwordmanager.adapter;
+package com.morax.passwordmanager.adapter;
 
 import static android.content.Context.CLIPBOARD_SERVICE;
 
@@ -6,7 +6,6 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,13 +18,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.passwordmanager.R;
-import com.example.passwordmanager.activity.AccountActivity;
-import com.example.passwordmanager.database.AppDatabase;
-import com.example.passwordmanager.database.dao.AccountDao;
-import com.example.passwordmanager.database.dao.SiteAppDao;
-import com.example.passwordmanager.database.entity.Account;
-import com.example.passwordmanager.util.Security;
+import com.morax.passwordmanager.R;
+import com.morax.passwordmanager.database.AppDatabase;
+import com.morax.passwordmanager.database.dao.AccountDao;
+import com.morax.passwordmanager.database.entity.Account;
+import com.morax.passwordmanager.util.Security;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -65,8 +62,6 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHold
         holder.getLayoutAccount().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: add a bottom sheet to view details
-                // TODO: don't forget the copy field after clicking the fields
                 final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(context);
                 bottomSheetDialog.setContentView(R.layout.popup_account_item);
                 TextInputEditText etUsername = bottomSheetDialog.findViewById(R.id.et_username);
@@ -100,7 +95,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHold
                     });
                     etPassword.setFocusable(false);
                     etPassword.setInputType(InputType.TYPE_NULL);
-                    etPassword.setText(account.getPassword());
+                    etPassword.setText(security.decrypt(account.getPassword()));
                 }
                 if (etNote != null) {
                     etNote.setOnClickListener(new View.OnClickListener() {

@@ -1,4 +1,4 @@
-package com.example.passwordmanager;
+package com.morax.passwordmanager;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.passwordmanager.activity;
+package com.morax.passwordmanager.activity;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,19 +12,17 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.passwordmanager.BuildConfig;
-import com.example.passwordmanager.R;
-import com.example.passwordmanager.adapter.AccountAdapter;
-import com.example.passwordmanager.database.AppDatabase;
-import com.example.passwordmanager.database.dao.AccountDao;
-import com.example.passwordmanager.database.dao.SiteAppDao;
-import com.example.passwordmanager.database.entity.Account;
-import com.example.passwordmanager.database.entity.SiteApp;
-import com.example.passwordmanager.util.Security;
+import com.morax.passwordmanager.R;
+import com.morax.passwordmanager.adapter.AccountAdapter;
+import com.morax.passwordmanager.database.AppDatabase;
+import com.morax.passwordmanager.database.dao.AccountDao;
+import com.morax.passwordmanager.database.dao.SiteAppDao;
+import com.morax.passwordmanager.database.entity.Account;
+import com.morax.passwordmanager.database.entity.SiteApp;
+import com.morax.passwordmanager.util.Security;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -92,7 +90,6 @@ public class AccountActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
-                Log.d("Password", "Your Password " + account.getPassword());
                 accountDao.insert(account);
                 accountAdapter.insertAccount(account, 0);
             }

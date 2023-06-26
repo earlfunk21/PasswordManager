@@ -1,17 +1,15 @@
-package com.example.passwordmanager.database;
+package com.morax.passwordmanager.database;
 
 import android.content.Context;
 
-import androidx.annotation.NonNull;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import com.example.passwordmanager.database.dao.AccountDao;
-import com.example.passwordmanager.database.dao.SiteAppDao;
-import com.example.passwordmanager.database.entity.Account;
-import com.example.passwordmanager.database.entity.SiteApp;
+import com.morax.passwordmanager.database.dao.AccountDao;
+import com.morax.passwordmanager.database.dao.SiteAppDao;
+import com.morax.passwordmanager.database.entity.Account;
+import com.morax.passwordmanager.database.entity.SiteApp;
 
 @Database(entities = {SiteApp.class, Account.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {

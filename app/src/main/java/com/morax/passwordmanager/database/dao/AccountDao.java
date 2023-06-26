@@ -1,4 +1,4 @@
-package com.example.passwordmanager.database.dao;
+package com.morax.passwordmanager.database.dao;
 
 
 import androidx.room.Dao;
@@ -6,7 +6,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.passwordmanager.database.entity.Account;
+import com.morax.passwordmanager.database.entity.Account;
 
 import java.util.List;
 
